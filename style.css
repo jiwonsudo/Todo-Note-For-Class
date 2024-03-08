@@ -1,0 +1,104 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css");
+
+body {
+  margin: 0;
+  font-family: 'Pretendard';
+}
+
+nav {
+  width: 100vw;
+  height: 40px;
+  background-color: black;
+  opacity: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0; left: 0;
+}
+
+.nav-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+}
+
+.main {
+  width: 100vw;
+  height: calc(100vh - 50px);
+  background-image: url(./background.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contents-wrapper {
+  width: 85%;
+  height: 70%;
+}
+
+.todo-container {
+  height: 70%;
+  padding: 10px;
+  border: 3px solid white;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+.todo {
+  margin: 10px;
+  width: 40%;
+  height: 30px;
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-title {
+  padding-left: 10px;
+}
+
+.delete-button {
+  width: 20%;
+  height: 100%;
+  color: white;
+  background-color: red;
+  border: none;
+  border-radius: 0 15px 15px 0;
+}
+
+.delete-button:hover {
+  cursor: pointer;
+}
+
+.todo-add-button {
+  margin: 10px;
+  width: 40%;
+  height: 30px;
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+.todo-add-button:active {
+  background-color: #e5e5e5;
+}
+
+.todo-add-button:hover {
+  cursor: pointer;
+}
+
+footer {
+  width: 100vw;
+  height: 30px;
+  padding: 10px;
+  font-size: 15px;
+  background-color: #f0f0f0;
+}
