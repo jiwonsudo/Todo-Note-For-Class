@@ -28,7 +28,7 @@ nav {
   width: 100vw;
   height: calc(100vh - 50px);
   min-height: 700px;
-  background-image: url(./background.jpg);
+  background-image: url(./images/background.jpg);
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -76,7 +76,40 @@ nav {
   cursor: pointer;
 }
 
+.todo-form-container {
+  margin: 10px;
+  width: 45%;
+  height: 30px;
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-form-input {
+  width: 65%;
+  height: 15px;
+  margin-left: 8px;
+  padding-left: 10px;
+  border: 1px solid #a7a7a7;
+  border-radius: 15px;
+}
+
 .todo-add-button {
+  width: 20%;
+  height: 100%;
+  color: white;
+  background-color: green;
+  border: none;
+  border-radius: 0 15px 15px 0;
+}
+
+.todo-add-button:active {
+  background-color: rgb(0, 92, 0);
+}
+
+.todo-write-button {
   margin: 10px;
   width: 45%;
   height: 30px;
@@ -88,12 +121,18 @@ nav {
   border: none;
 }
 
-.todo-add-button:active {
-  background-color: #e5e5e5;
+.todo-write-button:active {
+  background-color: #b4b4b4;
 }
 
-.todo-add-button:hover {
+.todo-write-button:hover {
   cursor: pointer;
+}
+
+.todo-write-button img {
+  height: 12px;
+  aspect-ratio: 1 / 1;
+  opacity: 80%;
 }
 
 footer {
