@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="style.css" rel="stylesheet">
+  <!-- <link href="style.css" rel="stylesheet"> -->
   <title>Document</title>
 </head>
 <body>
@@ -11,25 +11,27 @@
     <a href="/" class="nav-title">Todos</a>
   </nav>
   <section class="main">
-    <div class="todo-container">
-
-      <div id="todo-1" class="todo">
-        <div class="todo-title">
-          <input type="checkbox" id="todo-1-cbox">
-          <label for="todo-1-cbox">이곳에 투두를 작성하세요!</label>
+    <div class="todo-wrapper">
+      <div class="todo-container">
+    
+        <div id="todo-1" class="todo">
+          <div class="todo-title">
+            <input type="checkbox" id="todo-1-cbox">
+            <label for="todo-1-cbox">이곳에 투두를 작성하세요!</label>
+          </div>
+          <button id="todo-1-dbtn" class="delete-button">삭제</button>
         </div>
-        <button id="todo-1-dbtn" class="delete-button">삭제</button>
+    
+        <div class="todo-form-container">
+          <input class="todo-form-input" type="text" maxlength="10">
+          <button class="todo-add-button">추가</button>
+        </div>
+    
+        <button class="todo-write-button">
+          <img src="./images/plus_icon.svg"/>
+        </button>
+
       </div>
-
-      <div class="todo-form-container">
-        <input class="todo-form-input" type="text" maxlength="10">
-        <button class="todo-add-button">추가</button>
-      </div>
-
-      <button class="todo-write-button">
-        <img src="./images/plus_icon.svg"/>
-      </button>
-
     </div>
   </section>
   <footer>&#x00A9; Jiwon Jeong all rights reserved.</footer>
