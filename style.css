@@ -68,6 +68,11 @@ nav {
   padding-left: 10px;
 }
 
+.done {
+  text-decoration: line-through;
+  opacity: 50%;
+}
+
 .delete-button {
   width: 20%;
   height: 100%;
