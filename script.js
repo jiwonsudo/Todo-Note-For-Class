@@ -1,6 +1,4 @@
 const todoContainer = document.querySelector('.todo-container');
-const todoAddBtn = document.querySelector('.todo-add-button');
-let todoWriteBtn = document.querySelector('.todo-write-button');
 
 function writeNewTodo() {
   // delete todo-write-button
@@ -54,4 +52,11 @@ function addNewTodo(mainText) {
 
 
 // initial setting
+let todoWriteBtn = document.querySelector('.todo-write-button');
 todoWriteBtn.addEventListener('click', writeNewTodo);
+document.getElementById('todo-1-cbox').addEventListener('change', (event) => {
+  event.target.nextSibling.classList.toggle('done');
+});
+document.getElementById('todo-1-dbtn').addEventListener('click', (event) => {
+  event.target.parentNode.remove();
+});
